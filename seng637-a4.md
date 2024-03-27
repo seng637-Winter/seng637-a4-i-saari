@@ -12,7 +12,7 @@
 Due Date: Check D2L for the submission deadline.
 
 
-<span style="color:DarkCyan  ">
+
 
 > **Summary:
 > Part 1:**
@@ -96,7 +96,7 @@ Similar to assignments 2 and 3, the system to be tested for this part is JFreeCh
 
     4.  Press Add and follow the installation process
 
-Note that, Pitest by default employs only mutation operators at the method-level. <span style="color:MidnightBlue   ">**You need to enable the class-level mutators before starting your tests.** <span style="color:black ">Follow these steps to select all mutators.
+Note that, Pitest by default employs only mutation operators at the method-level. **You need to enable the class-level mutators before starting your tests.** Follow these steps to select all mutators.
 
 **Figure 1 – Enabling mutators in Pitest**
 
@@ -158,7 +158,7 @@ Report the process you followed for this part plus your findings and results in 
 
 ### 2.5.7 Add More Test Cases to increase Mutation Score
 
-In this phase, we want to increase the mutation score. For each of the classes under mutation testing (`Range` and `DataUtilities`), measure the mutation score of your original test suites from assignment 3. Aim at increasing mutation scores for `Range` and `DataUtilities` each by at least <span style="color:green">10% <span style="color:black">, e.g., if it is <span style="color:green">55%<span style="color:black">, make it at least<span style="color:green"> 65%<span style="color:black">. Discuss in your report the test cases that you had to add to increase the mutation score, and also how you designed them.
+In this phase, we want to increase the mutation score. For each of the classes under mutation testing (`Range` and `DataUtilities`), measure the mutation score of your original test suites from assignment 3. Aim at increasing mutation scores for `Range` and `DataUtilities` each by at least 10% , e.g., if it is 55%, make it at least 65%. Discuss in your report the test cases that you had to add to increase the mutation score, and also how you designed them.
 
 # 3 Part 2: GUI TESTING
 
@@ -170,11 +170,11 @@ The main objective of this part of the assignment is to familiarize students wit
 
 In this assignment, you will mainly use Selenium web-interface testing tool to test one of the following websites.
 
-- <span style="color:green">Shop Smart Canada Page
+- Shop Smart Canada Page
 
-- <span style="color:blue">Home Depot Page
+- Home Depot Page
 
-- <span style="color:purple">Leon's Page
+- Leon's Page
 
 You will also explore this alternative tool: Sikulix (http://sikulix.com/quickstart/)
 
@@ -214,7 +214,7 @@ You will also explore this alternative tool: Sikulix (http://sikulix.com/quickst
 
 Students will be required to submit a report on their work in the lab as a group. To be consistent, please use the template markdown file “Assignment4-ReportTemplate.md” provided online under the Assignment 4 folder. If desired, feel free to rename the sections, as long as the headings are still descriptive and accurate.
 
-<span style="color:MidnightBlue   ">**NOTE2: include folder together with your report. One containing Part 1’s final test suite, another containing Selenium test scripts.**
+**NOTE2: include folder together with your report. One containing Part 1’s final test suite, another containing Selenium test scripts.**
 
 A portion of the grade for the lab report will be allocated to organization and clarity. The report marking scheme is as follows:
 

@@ -1,0 +1,971 @@
+{
+  "id": "7ee51506-c3e5-490a-ac90-b619d19dbc3e",
+  "version": "2.0",
+  "name": "SENG637Lab4",
+  "url": "https://www.homedepot.ca",
+  "tests": [{
+    "id": "500c8b67-f9c2-4696-a92d-26a25c676ca3",
+    "name": "UnsuccessfulLogin",
+    "commands": [{
+      "id": "f2db9911-0868-4c8b-9272-8785bbf929af",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e22c80cb-43fa-468e-937e-10f82195e838",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1537x912",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19a51df2-606e-4c68-b125-e4611372282d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-ml--x-small:nth-child(2)",
+      "targets": [
+        ["css=.acl-ml--x-small:nth-child(2)", "css:finder"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Account / Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27b5fbd9-ed1d-4367-927d-d0b0596ecc66",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//acl-dropdown[@id='global-header-account-menu-dropdown']/div[3]/div/global-header-account-menu-container/global-header-account-menu-guest/div/form/acl-input-container/div[2]/div/input",
+      "targets": [
+        ["id=id8178", "id"],
+        ["css=#id8178", "css:finder"],
+        ["xpath=//input[@id='id8178']", "xpath:attributes"],
+        ["xpath=//acl-dropdown[@id='global-header-account-menu-dropdown']/div[3]/div/global-header-account-menu-container/global-header-account-menu-guest/div/form/acl-input-container/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//acl-input-container/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "955134ae-1bdd-4895-ad5a-72643adcb2e4",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//acl-dropdown[@id='global-header-account-menu-dropdown']/div[3]/div/global-header-account-menu-container/global-header-account-menu-guest/div/form/acl-input-container/div[2]/div/input",
+      "targets": [
+        ["id=id8178", "id"],
+        ["css=#id8178", "css:finder"],
+        ["xpath=//input[@id='id8178']", "xpath:attributes"],
+        ["xpath=//acl-dropdown[@id='global-header-account-menu-dropdown']/div[3]/div/global-header-account-menu-container/global-header-account-menu-guest/div/form/acl-input-container/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//acl-input-container/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "wrongemail"
+    }, {
+      "id": "5f2b537a-b277-425f-b09a-4cb123cbf625",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//acl-dropdown[@id='global-header-account-menu-dropdown']/div[3]/div/global-header-account-menu-container/global-header-account-menu-guest/div/form/acl-password-container/div[2]/div/input",
+      "targets": [
+        ["id=id8109", "id"],
+        ["css=#id8109", "css:finder"],
+        ["xpath=//input[@id='id8109']", "xpath:attributes"],
+        ["xpath=//acl-dropdown[@id='global-header-account-menu-dropdown']/div[3]/div/global-header-account-menu-container/global-header-account-menu-guest/div/form/acl-password-container/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//acl-password-container/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "wrongpassword"
+    }, {
+      "id": "f875ea29-76e9-4897-9179-e3cac62b7e3a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-button--theme--primary > .acl-button__label",
+      "targets": [
+        ["css=.acl-button--theme--primary > .acl-button__label", "css:finder"],
+        ["xpath=//acl-dropdown[@id='global-header-account-menu-dropdown']/div[3]/div/global-header-account-menu-container/global-header-account-menu-guest/div/form/button/span", "xpath:idRelative"],
+        ["xpath=//form/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "383f3611-7586-4ac9-9182-b0ab8b99cfbf",
+      "comment": "",
+      "command": "waitForText",
+      "target": "css=.acl-alert__message",
+      "targets": [
+        ["css=.acl-alert__message", "css:finder"],
+        ["xpath=//acl-dropdown[@id='global-header-account-menu-dropdown']/div[3]/div/global-header-account-menu-container/global-header-account-menu-guest/div/div/section/header/div", "xpath:idRelative"],
+        ["xpath=//section/header/div", "xpath:position"]
+      ],
+      "value": "Please confirm the email address entered is correct. If it is, click Forgot Password to reset the password on your account. If you are still unable to log in, please contact us."
+    }, {
+      "id": "4ac647c3-f571-4314-aef3-7e75fecb84fb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.acl-alert__message",
+      "targets": [
+        ["css=.acl-alert__message", "css:finder"],
+        ["xpath=//acl-dropdown[@id='global-header-account-menu-dropdown']/div[3]/div/global-header-account-menu-container/global-header-account-menu-guest/div/div/section/header/div", "xpath:idRelative"],
+        ["xpath=//section/header/div", "xpath:position"]
+      ],
+      "value": "Please confirm the email address entered is correct. If it is, click Forgot Password to reset the password on your account. If you are still unable to log in, please contact us."
+    }]
+  }, {
+    "id": "01428a33-5c47-41b6-a8a8-5c0de65277b4",
+    "name": "SuccessfulLogin",
+    "commands": [{
+      "id": "87dab328-4dcf-4293-9dba-30452f00748e",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01ce03c1-83f6-4282-958b-979f2a3ee7b2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1537x912",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75fdc546-62d7-4ac6-b44b-f5c48ff02c25",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-ml--x-small use",
+      "targets": [
+        ["css=.acl-ml--x-small use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd30108b-50bc-4c6b-8af9-bd11888d0fc4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//acl-dropdown[@id='global-header-account-menu-dropdown']/div[3]/div/global-header-account-menu-container/global-header-account-menu-guest/div/form/acl-input-container/div[2]/div/input",
+      "targets": [
+        ["id=id4532", "id"],
+        ["css=#id4532", "css:finder"],
+        ["xpath=//input[@id='id4532']", "xpath:attributes"],
+        ["xpath=//acl-dropdown[@id='global-header-account-menu-dropdown']/div[3]/div/global-header-account-menu-container/global-header-account-menu-guest/div/form/acl-input-container/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//acl-input-container/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea60fddb-435f-425f-9b7d-471ac3848756",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//acl-dropdown[@id='global-header-account-menu-dropdown']/div[3]/div/global-header-account-menu-container/global-header-account-menu-guest/div/form/acl-input-container/div[2]/div/input",
+      "targets": [
+        ["id=id4532", "id"],
+        ["css=#id4532", "css:finder"],
+        ["xpath=//input[@id='id4532']", "xpath:attributes"],
+        ["xpath=//acl-dropdown[@id='global-header-account-menu-dropdown']/div[3]/div/global-header-account-menu-container/global-header-account-menu-guest/div/form/acl-input-container/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//acl-input-container/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "ian.saari1@ucalgary.ca"
+    }, {
+      "id": "45d80276-d397-4def-b237-d4cceb9d4300",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//acl-dropdown[@id='global-header-account-menu-dropdown']/div[3]/div/global-header-account-menu-container/global-header-account-menu-guest/div/form/acl-password-container/div[2]/div/input",
+      "targets": [
+        ["id=id9975", "id"],
+        ["css=#id9975", "css:finder"],
+        ["xpath=//input[@id='id9975']", "xpath:attributes"],
+        ["xpath=//acl-dropdown[@id='global-header-account-menu-dropdown']/div[3]/div/global-header-account-menu-container/global-header-account-menu-guest/div/form/acl-password-container/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//acl-password-container/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "SENG637Lab4"
+    }, {
+      "id": "897b156d-2d14-467a-b1d8-795281c151e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-button--theme--primary > .acl-button__label",
+      "targets": [
+        ["css=.acl-button--theme--primary > .acl-button__label", "css:finder"],
+        ["xpath=//acl-dropdown[@id='global-header-account-menu-dropdown']/div[3]/div/global-header-account-menu-container/global-header-account-menu-guest/div/form/button/span", "xpath:idRelative"],
+        ["xpath=//form/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cce5de3b-8f53-462a-a155-e1c5dfb70498",
+      "comment": "",
+      "command": "waitForText",
+      "target": "css=.acl-ml--x-small:nth-child(2)",
+      "targets": [
+        ["css=.acl-ml--x-small:nth-child(2)", "css:finder"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Hi Student, My Account')]", "xpath:innerText"]
+      ],
+      "value": "Hi Student, My Account"
+    }, {
+      "id": "a2daab5f-2ec1-4fb3-a3b5-7174a5a4c84f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.acl-ml--x-small:nth-child(2)",
+      "targets": [
+        ["css=.acl-ml--x-small:nth-child(2)", "css:finder"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Hi Student, My Account')]", "xpath:innerText"]
+      ],
+      "value": "Hi Student, My Account"
+    }]
+  }, {
+    "id": "258951dc-d117-4390-a811-16d71db470f1",
+    "name": "ChangeLanguageToFrench",
+    "commands": [{
+      "id": "3bf5e18f-5e99-4a4f-9486-5557c30cba63",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b9cf7e6-8e5b-411b-ba70-a68b850d8654",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1796x929",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74f7942f-1014-4861-a18b-566e6ff6817a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Français",
+      "targets": [
+        ["linkText=Français", "linkText"],
+        ["css=sc-lang-toggle-micro .acl-text-size--small", "css:finder"],
+        ["xpath=//a[contains(text(),'Français')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.homedepot.ca/fr/accueil.html')]", "xpath:href"],
+        ["xpath=//sc-lang-toggle-micro/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Français')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "abb9e7c1-b202-4a0e-9df1-62b09de59a54",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.hdca-cms-rich-text__selection--font-size--large",
+      "targets": [
+        ["css=.hdca-cms-rich-text__selection--font-size--large", "css:finder"],
+        ["xpath=//h2/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Recherches populaires')]", "xpath:innerText"]
+      ],
+      "value": "Recherches populaires"
+    }]
+  }, {
+    "id": "5dc7c092-f92b-46e3-b958-b5abee541a85",
+    "name": "SearchScrews",
+    "commands": [{
+      "id": "43bce7c8-307c-4146-8194-3a908efbb44e",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b8b8afc-7683-44ba-9af7-99865028fc3f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1796x929",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5182e40-89c3-43db-a3f5-9f281209546f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id3176", "id"],
+        ["css=#id3176", "css:finder"],
+        ["xpath=//input[@id='id3176']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e9d7a93-ceef-4c86-b282-2f81a4951ac4",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id3176", "id"],
+        ["css=#id3176", "css:finder"],
+        ["xpath=//input[@id='id3176']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "wood screws"
+    }, {
+      "id": "57c425d3-88d1-4c6b-909c-ac39d434912e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-action-button__icon > svg",
+      "targets": [
+        ["css=.acl-action-button__icon > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9823f51b-dad4-4049-974f-6bee7104704d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-free-scroll__items-container",
+      "targets": [
+        ["css=.acl-free-scroll__items-container", "css:finder"],
+        ["xpath=//acl-free-scroll/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "713dab88-1cd2-4d23-b8c8-06db7f9317ce",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.acl-title--large",
+      "targets": [
+        ["css=.acl-title--large", "css:finder"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "468 results for 'wood screws'"
+    }]
+  }, {
+    "id": "6c5c812f-f629-4515-a118-208c9d71d88d",
+    "name": "Logout",
+    "commands": [{
+      "id": "3c1e9deb-4019-4844-abf7-95ee0c0efbc5",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "915c2d27-885c-4225-b919-4cdd00ad6a3f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1537x912",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae5115a3-e668-4e88-9d30-c643d696105f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-ml--x-small > svg",
+      "targets": [
+        ["css=.acl-ml--x-small > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "41b553c6-0105-4b69-b763-3854e602b133",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-button--theme--secondary > .acl-button__label",
+      "targets": [
+        ["css=.acl-button--theme--secondary > .acl-button__label", "css:finder"],
+        ["xpath=//acl-dropdown[@id='global-header-account-menu-dropdown']/div[3]/div/global-header-account-menu-container/global-header-account-menu-user/div/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//global-header-account-menu-user/div/div[3]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Log Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01876e2b-c4c2-417d-8e46-3ba5af982b99",
+      "comment": "",
+      "command": "waitForText",
+      "target": "css=.acl-ml--x-small:nth-child(2)",
+      "targets": [
+        ["css=.acl-ml--x-small:nth-child(2)", "css:finder"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Account / Sign In')]", "xpath:innerText"]
+      ],
+      "value": "Account / Sign In"
+    }, {
+      "id": "39ff4ed4-d1ce-49b9-8e11-df1d273e914b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.acl-ml--x-small:nth-child(2)",
+      "targets": [
+        ["css=.acl-ml--x-small:nth-child(2)", "css:finder"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Account / Sign In')]", "xpath:innerText"]
+      ],
+      "value": "Account / Sign In"
+    }]
+  }, {
+    "id": "97a8e00f-4983-43a7-958b-2edf69fe3907",
+    "name": "BrowseByRoomFaucets",
+    "commands": [{
+      "id": "7b551b32-2d05-4c37-a6ed-70260b6df9c1",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "223ec38c-0df7-48da-9062-57d497318f04",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1782x958",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3d6043b-15ed-41b8-94da-5903dba4b456",
+      "comment": "",
+      "command": "click",
+      "target": "css=#RoomMainNavNodeContainer .acl-main-nav-item__label",
+      "targets": [
+        ["css=#RoomMainNavNodeContainer .acl-main-nav-item__label", "css:finder"],
+        ["xpath=//acl-main-nav-item[@id='RoomMainNavNodeContainer']/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/acl-main-nav-item/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Shop by Room')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5e24636-22c5-4fd6-adee-f0c870ef84d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.categorybanner:nth-child(4) .hdca-button2__non-wrap-label",
+      "targets": [
+        ["css=.categorybanner:nth-child(4) .hdca-button2__non-wrap-label", "css:finder"],
+        ["xpath=//div[4]/article/a/div[2]/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5082dbb-939a-4fbb-9fa9-47801ea97d76",
+      "comment": "",
+      "command": "click",
+      "target": "css=.categorybanner:nth-child(7) .hdca-button2__label",
+      "targets": [
+        ["css=.categorybanner:nth-child(7) .hdca-button2__label", "css:finder"],
+        ["xpath=//div[7]/article/a/div[2]/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "233f893e-8611-4abd-80ac-9b24c89f5f7d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.categorybanner:nth-child(2) .hdca-button2__non-wrap-label",
+      "targets": [
+        ["css=.categorybanner:nth-child(2) .hdca-button2__non-wrap-label", "css:finder"],
+        ["xpath=//span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95cdc359-22e0-4500-81b3-a0fa4cab234a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.acl-display--show",
+      "targets": [
+        ["css=.acl-display--show", "css:finder"],
+        ["xpath=//h1/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Pull Down Faucets')]", "xpath:innerText"]
+      ],
+      "value": "Pull Down Faucets"
+    }]
+  }, {
+    "id": "c8d30cf8-fcc3-441a-b54f-c505f08aa32e",
+    "name": "BrowseRentalCompactors",
+    "commands": [{
+      "id": "3c1e7b23-dd75-4849-8ba3-212633c0f1c1",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27279d5f-e374-43be-bde1-d6e850d67e58",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1537x912",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27c6c349-6ff7-493f-94b4-206e897f7248",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Rental",
+      "targets": [
+        ["linkText=Rental", "linkText"],
+        ["css=.acl-list-item:nth-child(1) > .acl-text-size--small", "css:finder"],
+        ["xpath=//a[contains(text(),'Rental')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/en/home/tool-and-vehicle-rental.html')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Rental')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba3596cb-df9e-441b-bc94-5658bd72d99b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Compactors",
+      "targets": [
+        ["linkText=Compactors", "linkText"],
+        ["css=.sidenavigation:nth-child(1) .hdca-cms-side-navigation__list-item:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Compactors')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.homedepot.ca/en/home/tool-and-vehicle-rental/compactor-rental.html')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Compactors')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98ae0372-d61a-40de-a728-e1bbad26f14a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hdca-product-box-container:nth-child(1) .hdca-product-box__header-intro-img",
+      "targets": [
+        ["css=.hdca-product-box-container:nth-child(1) .hdca-product-box__header-intro-img", "css:finder"],
+        ["xpath=//img[@alt='Small Vibratory Plate Compactor']", "xpath:img"],
+        ["xpath=//div[@id='tool-rental-grid']/section/div/div/article/section/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "660bd023-6cb3-4ca1-bef3-6ef5144457ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hdca-product-box-container:nth-child(1) .hdca-button2",
+      "targets": [
+        ["css=.hdca-product-box-container:nth-child(1) .hdca-button2", "css:finder"],
+        ["xpath=//div[@id='tool-rental-grid']/section/div/div/article/section[2]/div[2]/div/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Check Pricing & Availability')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bea0bfc8-a117-4de8-81cb-c7f958737b64",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product-title",
+      "targets": [
+        ["css=.product-title", "css:finder"],
+        ["xpath=//div[@id='loadVar']/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Small Vibratory Plate Compactor')]", "xpath:innerText"]
+      ],
+      "value": "Small Vibratory Plate Compactor"
+    }]
+  }, {
+    "id": "b5bb1782-c0b8-44e3-96a6-17007b60e757",
+    "name": "AddToCart",
+    "commands": [{
+      "id": "ce75ed7f-da2a-496b-b0d4-75ad52ec9d6f",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42784eab-3ef4-44e0-b34e-e97ae2c484b3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1537x912",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f412227d-e3b9-4e77-aa74-7139b536708d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-main-nav-item__icon-wrapper",
+      "targets": [
+        ["css=.acl-main-nav-item__icon-wrapper", "css:finder"],
+        ["xpath=//a[@id='ShopMainNavNode']/span[2]", "xpath:idRelative"],
+        ["xpath=//a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0c4c8d1-2baa-46f2-8b0c-ff47bd2e0759",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-flyout-category-menu-item--has-ad-spot:nth-child(5) .acl-flyout-category-menu-item__link-text",
+      "targets": [
+        ["css=.acl-flyout-category-menu-item--has-ad-spot:nth-child(5) .acl-flyout-category-menu-item__link-text", "css:finder"],
+        ["xpath=//div[@id='acl-flyout-menu-main__focus-wrapper--l1']/acl-flyout-category-menu-item[5]/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/acl-flyout-category-menu-item[5]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Building Materials')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e03d4f4a-1113-431e-b9d6-fefd61177113",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-flyout-category-menu-item--l2:nth-child(12) .acl-flyout-category-menu-item__link-text",
+      "targets": [
+        ["css=.acl-flyout-category-menu-item--l2:nth-child(12) .acl-flyout-category-menu-item__link-text", "css:finder"],
+        ["xpath=//div[@id='acl-flyout-menu-main__focus-wrapper--l2']/div/acl-flyout-category-menu-item[12]/div/a/span", "xpath:idRelative"],
+        ["xpath=//acl-flyout-category-menu-item[12]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Woodworking Supplies')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23fdd30b-39bb-4baf-aeb6-ab83fd6d7ea7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.secondarybanner:nth-child(6) .hdca-cms-secondary-banner__image",
+      "targets": [
+        ["css=.secondarybanner:nth-child(6) .hdca-cms-secondary-banner__image", "css:finder"],
+        ["xpath=//img[@alt='Dimensional Lumber & Studs']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aaa9b0f3-173a-448e-bd3f-96ca41465f6e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-mr--small .acl-image__image",
+      "targets": [
+        ["css=.acl-mr--small .acl-image__image", "css:finder"],
+        ["xpath=//img[contains(@src,'https://homedepot.scene7.com/is/image/homedepotcanada/p_1000100158.jpg?product-images=s')]", "xpath:img"],
+        ["xpath=//div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "894ae72b-e188-4360-863a-1ee67ccae188",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,271)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76141a32-ca7f-46d0-a0bd-65e7d97b5292",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-product-card:nth-child(1) > .acl-product-card__cta--bottom .acl-button__label",
+      "targets": [
+        ["css=.acl-product-card:nth-child(1) > .acl-product-card__cta--bottom .acl-button__label", "css:finder"],
+        ["xpath=//section[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fea9405-3dc1-48b4-bf7f-ffda6e3f8808",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-button:nth-child(2)",
+      "targets": [
+        ["css=.acl-button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='topOfPanelRef']/div[3]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'View Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "234e6bee-02f7-4141-b226-9038521944cb",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,33)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87e2d240-a042-4e7a-b09b-deb59f57d210",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.acl-color--title-dark",
+      "targets": [
+        ["css=.acl-color--title-dark", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'My Cart: 1 item(s)')]", "xpath:innerText"]
+      ],
+      "value": "My Cart: 1 item(s)"
+    }]
+  }, {
+    "id": "76bfc310-14cf-4cfa-8c88-c9c36871cc00",
+    "name": "BrowseByRoomMattress",
+    "commands": [{
+      "id": "f995ae62-747f-4521-91da-60dbb5f3edd2",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32763a41-3cdf-4aa7-b2b5-2d8b166774d0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1782x958",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7548ab35-23b4-47e6-bbe9-8ac54c5c25c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#RoomMainNavNodeContainer .acl-main-nav-item__label",
+      "targets": [
+        ["css=#RoomMainNavNodeContainer .acl-main-nav-item__label", "css:finder"],
+        ["xpath=//acl-main-nav-item[@id='RoomMainNavNodeContainer']/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/acl-main-nav-item/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Shop by Room')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74dee284-0129-479a-b3df-fa68f6ea5beb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.categorybanner:nth-child(6) .hdca-button2__non-wrap-label",
+      "targets": [
+        ["css=.categorybanner:nth-child(6) .hdca-button2__non-wrap-label", "css:finder"],
+        ["xpath=//div[6]/article/a/div[2]/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dff903ba-f123-4444-a072-0f1d1d337e75",
+      "comment": "",
+      "command": "click",
+      "target": "css=.categorybanner:nth-child(6) .hdca-button2__non-wrap-label",
+      "targets": [
+        ["css=.categorybanner:nth-child(6) .hdca-button2__non-wrap-label", "css:finder"],
+        ["xpath=//div[6]/article/a/div[2]/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26d00b8e-e52e-4efa-af98-2e276dacbbd7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a104c6cc-9bd0-4823-910c-fdc0d36ebc09",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.acl-display--show",
+      "targets": [
+        ["css=.acl-display--show", "css:finder"],
+        ["xpath=//h1/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Mattresses')]", "xpath:innerText"]
+      ],
+      "value": "Mattresses"
+    }]
+  }, {
+    "id": "9bef9a5c-82a7-4f11-a968-0ef172aed77d",
+    "name": "SearchDoors",
+    "commands": [{
+      "id": "92baab79-f9e1-4612-bd44-ef3126e255e6",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "514647cd-252d-43c0-bc58-8b4082e1d80e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1782x958",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03803036-0ef6-4ac6-9bdb-f9a0381d9e71",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id7218", "id"],
+        ["css=#id7218", "css:finder"],
+        ["xpath=//input[@id='id7218']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dc5da06-4703-41c1-9da3-6abd02a9c787",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input",
+      "targets": [
+        ["id=id7218", "id"],
+        ["css=#id7218", "css:finder"],
+        ["xpath=//input[@id='id7218']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "doors"
+    }, {
+      "id": "8fed50fd-1b48-47a0-a287-b06d9a817527",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-action-button__icon > svg",
+      "targets": [
+        ["css=.acl-action-button__icon > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "eff4de62-60b2-438a-9a84-c4bd6238e42a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.hdca-cms-title--is-h1",
+      "targets": [
+        ["css=.hdca-cms-title--is-h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Exterior Doors')]", "xpath:innerText"]
+      ],
+      "value": "Exterior Doors"
+    }]
+  }, {
+    "id": "1b511f2c-a6af-44ca-92f1-19c0439772d4",
+    "name": "ChangeLanguageToEnglish",
+    "commands": [{
+      "id": "1909c767-23db-4c69-95f1-dcb6073a15ce",
+      "comment": "",
+      "command": "open",
+      "target": "/fr/accueil.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13f14198-7da5-484a-838c-b00bb2a2f8e7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1782x958",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2cd11f88-1ab9-4de4-b1b5-33f07cd52ce6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=English",
+      "targets": [
+        ["linkText=English", "linkText"],
+        ["css=sc-lang-toggle-micro .acl-text-size--small", "css:finder"],
+        ["xpath=//a[contains(text(),'English')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.homedepot.ca/en/home.html')]", "xpath:href"],
+        ["xpath=//sc-lang-toggle-micro/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'English')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a6b669e-3155-4746-b850-c56272cd15e5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.hdca-cms-rich-text__selection--font-size--large",
+      "targets": [
+        ["css=.hdca-cms-rich-text__selection--font-size--large", "css:finder"],
+        ["xpath=//h2/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Popular Searches')]", "xpath:innerText"]
+      ],
+      "value": "Popular Searches"
+    }]
+  }, {
+    "id": "86d67674-5be0-45c6-a5ed-df61d6b39190",
+    "name": "BrowseRentalChainsaw",
+    "commands": [{
+      "id": "51637ce6-de57-4acb-bc5e-55fca5a786cc",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a305d38-a53f-4333-976b-9558cf018b24",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1782x958",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b292475a-b55b-444c-9dac-3ffbeb423813",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Rental",
+      "targets": [
+        ["linkText=Rental", "linkText"],
+        ["css=.acl-list-item:nth-child(1) > .acl-text-size--small", "css:finder"],
+        ["xpath=//a[contains(text(),'Rental')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/en/home/tool-and-vehicle-rental.html')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Rental')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2e792ca-06da-41eb-97ce-f93835422bba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cutting & Concrete",
+      "targets": [
+        ["linkText=Cutting & Concrete", "linkText"],
+        ["css=.sidenavigation:nth-child(1) .hdca-cms-side-navigation__list-item:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cutting & Concrete')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.homedepot.ca/en/home/tool-and-vehicle-rental/concrete-tool-rental.html')]", "xpath:href"],
+        ["xpath=//li[2]/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cutting & Concrete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72d5108d-f91b-4aa6-a4eb-3cd930a22e1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hdca-product-box-container:nth-child(1) .hdca-button2",
+      "targets": [
+        ["css=.hdca-product-box-container:nth-child(1) .hdca-button2", "css:finder"],
+        ["xpath=//div[@id='tool-rental-grid']/section/div/div/article/section[2]/div[2]/div/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Check Pricing & Availability')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bef5699d-a847-4f14-bf80-014dc06943a2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product-title",
+      "targets": [
+        ["css=.product-title", "css:finder"],
+        ["xpath=//div[@id='loadVar']/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'18\" Gas Chainsaw')]", "xpath:innerText"]
+      ],
+      "value": "18\" Gas Chainsaw"
+    }]
+  }, {
+    "id": "0e6a418e-6d94-4343-9aef-3900b0ac3355",
+    "name": "RemoveFromCart",
+    "commands": [{
+      "id": "7fa7cb61-733a-44b3-86d9-6bbd77d13239",
+      "comment": "",
+      "command": "open",
+      "target": "/en/home.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f58fa8c5-bdf4-4ec4-a082-d6d5542d2616",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1782x958",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34ca6932-58e9-4793-8dd8-413cd1ef1661",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-bold-hover__text:nth-child(1)",
+      "targets": [
+        ["css=.acl-bold-hover__text:nth-child(1)", "css:finder"],
+        ["xpath=//a/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed4108e1-2c40-47ac-9924-1d4e0ba165ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.acl-display--flex > .acl-link:nth-child(1) > .acl-neutral-button__label > span > span:nth-child(1)",
+      "targets": [
+        ["css=.acl-display--flex > .acl-link:nth-child(1) > .acl-neutral-button__label > span > span:nth-child(1)", "css:finder"],
+        ["xpath=//cart-product-actions/div/div/button/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "855b6ef1-1e7b-4792-a2fb-023799174690",
+      "comment": "",
+      "command": "waitForText",
+      "target": "css=.acl-weight--regular:nth-child(1)",
+      "targets": [
+        ["css=.acl-weight--regular:nth-child(1)", "css:finder"],
+        ["xpath=//h1/span", "xpath:position"],
+        ["xpath=//span[contains(.,'0 item(s)')]", "xpath:innerText"]
+      ],
+      "value": "0 item(s)"
+    }, {
+      "id": "a9bf3e31-aab9-4f0a-bb90-b2298b5c8ef4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.acl-weight--regular:nth-child(1)",
+      "targets": [
+        ["css=.acl-weight--regular:nth-child(1)", "css:finder"],
+        ["xpath=//h1/span", "xpath:position"],
+        ["xpath=//span[contains(.,'0 item(s)')]", "xpath:innerText"]
+      ],
+      "value": "0 item(s)"
+    }]
+  }],
+  "suites": [{
+    "id": "279619fd-8135-4541-948f-7964d230d704",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.homedepot.ca/"],
+  "plugins": []
+}
